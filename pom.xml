@@ -84,7 +84,7 @@
       <url>http://3.216.79.213:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
-      <id>nexus-releases</id>
+      <id>maven-releases</id>
       <url>http://3.216.79.213:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
