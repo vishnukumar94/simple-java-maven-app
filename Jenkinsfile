@@ -63,7 +63,7 @@ pipeline{
         }*/
         stage ("Upload to Nexus") {
             steps {
-                sh "mvn deploy"
+                sh "mvn -gs ${WORKSPACE}/settings.xml deploy"
                }
             }
         
