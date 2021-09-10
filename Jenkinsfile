@@ -46,7 +46,7 @@ pipeline{
             }
            
             }
-        stage ("sonar scanning") {
+        /*stage ("sonar scanning") {
             steps {
                 script { 
                     def scannerHome = tool name: 'mySonarScanner';
@@ -60,7 +60,7 @@ pipeline{
                     }
                }
             }
-        }
+        }*/
         stage ("Upload to Nexus") {
             steps {
                 sh "mvn deploy"
