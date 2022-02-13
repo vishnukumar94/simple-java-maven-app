@@ -75,7 +75,7 @@ pipeline{
         }
         stage ("Upload to Nexus") {
             steps {
-                sh "mvn -gs ${WORKSPACE}/settings.xml dependency:purge-local-repository deploy"
+                sh "mvn -gs ${WORKSPACE}/settings.xml deploy"
                }
             }
 
