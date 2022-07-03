@@ -46,6 +46,7 @@ pipeline{
         stage("Pipeline Success"){
             steps{
                echo "========pipeline succcessfully completed========"
+                echo "========pipeline succcessfully ========"
             }
         }
     }
