@@ -6,11 +6,7 @@ pipeline{
     agent any
 
     stages{
-       /* stage("code checkout"){
-            steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'b3e333d0-1089-42df-9274-0dec9d032999', url: 'https://github.com/vishnukumar94/simple-java-maven-app.git']]])
-            }
-        }*/
+        
 
         stage("code Build"){
             steps{
